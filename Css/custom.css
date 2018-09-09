@@ -1,0 +1,107 @@
+.inscription{
+   text-align: center;
+
+
+}
+.inscription h1 {
+  font-family:'Roboto Slab', Arial,sans-serif;
+  color: red;
+  text-transform: uppercase;
+   margin-top: 15px;
+	
+}
+.inscription hr{
+	border-top: 1px solid red;
+	width: 330px;
+	margin-top: 15px;
+}
+.inscription p{
+	font-size: 20px;
+    font-weight: 300;
+  	font-family:'Roboto Slab', Arial,sans-serif;
+  	color: red;
+  	text-transform: uppercase;
+}
+.headerperso{
+   text-align: left;
+    margin-top: 15px;
+}
+
+.headerperso h4 {
+  font-family:'Roboto Slab', Arial,sans-serif;
+  color: red;
+  text-transform: uppercase;
+
+	
+}
+.headerperso hr{
+	border-top: 1px solid red;
+	width: 245px;
+	margin-top: 15px;
+	display: table-cell;
+}
+.headerperso2 h4 {
+  font-family:'Roboto Slab', Arial,sans-serif;
+  color: red;
+  text-transform: uppercase;
+
+}
+.headerperso2 hr{
+	border-top: 1px solid red;
+	width: 160px;
+	margin-top: 15px;
+	display: table-cell;
+
+}
+.headerperso2{
+        margin-bottom: 15px;
+}
+.button{
+   text-align: center;
+
+}
+.check2{
+    width: 900px;
+   margin: 15px 0px 0px 30px;
+}
+.recaptcha{
+  margin-top: 15px;
+}
+
+/*login*/
+.modal-header, .close {
+      background-color:#f9f9f9; #e0f600;#5cb85c
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+      padding:35px 50px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+      text-align: left;
+  }
+.modal-body{
+  padding:40px 50px;
+}
+
+  .modal-footer p {
+margin-left: 15px;
+  }
+
+  .login h1{
+   font-family:'Roboto Slab', Arial,sans-serif;
+  color: red;
+  text-transform: uppercase;
+}
+.login p{
+  font-size: 20px;
+    font-weight: 300;
+    font-family:'Roboto Slab', Arial,sans-serif;
+    text-transform: uppercase;
+}
+.info p{
+  font-size: 15px;
+    font-weight: 300;
+    font-family:'Roboto Slab', Arial,sans-serif;
+    text-transform: uppercase;
+}

@@ -1,0 +1,37 @@
+CREATE TABLE `users` (
+  `user_id` int(11)  auto_increment,
+  `firstname` varchar(50) ,
+ `lastname` varchar(50),
+`email` varchar(255) UNIQUE ,
+`password` varchar(255) ,
+  `birthday` DATE,
+`mobilenum` int(8) ,
+`telephonenum` int(8) ,
+`address` varchar(255),
+`state` varchar(50) ,
+`zipcode` int(4) ,
+`keys` varchar(255) ,
+  `accountstate` BOOLEAN default '0',
+`newsletter` BOOLEAN default '0',
+`signupdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `admin` (
+  `admin_id` int(11)  auto_increment,
+  `firstname` varchar(50) ,
+ `lastname` varchar(50),
+`email` varchar(255) UNIQUE ,
+`password` varchar(255) ,
+  PRIMARY KEY  (`admin_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `chats` (
+ `chat_id` int(11) auto_increment,
+`user_id` int(11),
+`message` varchar(255),
+`chat_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`chat_id`),
+constraint fk_user_id foreign key(`user_id`) references `users` (`user_id`)
+) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

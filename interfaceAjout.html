@@ -1,0 +1,50 @@
+<?php session_start();
+if (empty($_SESSION['admin_session'])) {
+header ('location:AdminLogin.php');
+  exit; 
+}
+ ?>
+
+<html>
+<form method="POST" action="ajoutProduit.php">
+<table border="1">
+
+<tr>
+<td>taille</td>
+<td><input type="text" name="taille"></td>
+</tr>
+<tr>
+<td>Nom</td>
+<td><input type="text" name="nom"></td>
+</tr>
+<tr>
+<td>Description</td>
+<td><input type="text" name="description"></td>
+</tr>
+<tr>
+<td>Image</td>
+<td><input type="file" name="image"></td>
+</tr>
+<tr>
+<td>Prix</td>
+<td><input type="text" name="prix"></td>
+</tr>
+<tr>
+<td>Categorie</td>
+<td><input type="text" name="categorie"></td>
+</tr>
+
+
+<tr>
+<td>Type_produit</td>
+<td><input type="text" name="Type_produit"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="ajouter"></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
